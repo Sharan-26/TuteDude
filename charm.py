@@ -52,8 +52,3 @@ full_name = first_name + " " + last_name
 
 # Step 3: Print personalized greeting
 print(f"\nHello, {full_name}! Welcome to the Python program.")
-
-
-
-
-
