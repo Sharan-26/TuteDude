@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Assignment 1 - Mathematical Operations & Greeting
 
 ## Overview
@@ -18,3 +19,6 @@
 git clone https://github.com/Sharan-26/TuteDude.git
 cd TuteDude
 python Assignment1.py
+=======
+# TuteDude
+>>>>>>> 8e460d7 (Added all pending files)
