@@ -73,5 +73,3 @@ while True:
 #     print("No duplicates found.")
     
 # has_duplicates(num)
-
-

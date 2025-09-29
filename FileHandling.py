@@ -28,5 +28,3 @@ class FileHandling:
 # x -> create
 # b -> binary
 # t -> text          
- 
- 
