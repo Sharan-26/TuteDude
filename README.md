@@ -31,7 +31,7 @@ python Assignment2.py
 Takes a number as an input and prints its factorial
 
 ## 
-Task 2: Using the Math Module for Calculations
+## Task 2: Using the Math Module for Calculations
 Takes a number as an input and prints it math functions like sqrt, Log value and its Sine value.
 
 ```bash
