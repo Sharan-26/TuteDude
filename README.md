@@ -1,3 +1,17 @@
+## Assignment 5 : Dictionary of Student Marks & List Slicing 
+
+## Task1 : Create a Dictionary of Student Marks
+
+### How to Run
+```bash
+python Assignment5.py
+```
+## Task2 : Demonstrate List Slicing
+
+## How to Run
+```bash
+python Assignment5.py
+```
 # Python Assignments
 
 ## Assignment 1: Mathematical Operations & Personalized Greeting
