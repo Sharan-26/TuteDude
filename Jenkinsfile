@@ -1,30 +1,38 @@
 pipeline {
-    agent any
+    agent {
+        label 'windows'
+    }
 
     stages {
 
         stage('Checkout') {
             steps {
-                echo 'Checking out source code...'
+                echo 'Code checkout completed'
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Building the project...'
+                bat 'echo Building on Windows Agent'
+                bat 'hostname'
+                bat 'whoami'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
+                bat 'echo Running tests'
             }
         }
+    }
 
-        stage('Finish') {
-            steps {
-                echo 'Pipeline completed successfully!'
-            }
+    post {
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+
+        failure {
+            echo 'Pipeline failed!'
         }
     }
 }
