@@ -1,27 +1,18 @@
 pipeline {
-    agent {
-        label 'windows'
-    }
+    agent any
 
     stages {
-
-        stage('Checkout') {
+        stage('Hello') {
             steps {
-                echo 'Code checkout completed'
+                echo 'Hello from Jenkins!'
             }
         }
 
-        stage('Build') {
+        stage('System Info') {
             steps {
-                bat 'echo Building on Windows Agent'
-                bat 'hostname'
-                bat 'whoami'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                bat 'echo Running tests'
+                sh 'hostname'
+                sh 'whoami'
+                sh 'pwd'
             }
         }
     }
@@ -29,10 +20,6 @@ pipeline {
     post {
         success {
             echo 'Pipeline completed successfully!'
-        }
-
-        failure {
-            echo 'Pipeline failed!'
         }
     }
 }
